@@ -45,9 +45,19 @@
   * CIDR
 
 ## Session 2
-
+Kubernetes Services and Scheduling
+Services and Controllers
+Effects of resource limiting on pod scheduling
+Configure the Kubernetes scheduler
+Run multiple schedulers
+Kubernetes Controllers
+Persistent Storage in Kubernetes
+Securing the Cluster
+Logging and Monitoring the Cluster
+Troubleshooting the Cluster
 ## Session 3
-
+Kubernetes Prometheus monitoring
+Kubernetes on AWS (EKS) overview
 ## Session 4
 
 ## Session 5
