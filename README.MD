@@ -3,8 +3,9 @@
 ## Session 1
 1. Introduction
 2. Architecture
-3. Installation
-4. Basics
+![K8s Architecture](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
+4. Installation
+5. Basics
   * Pods
     * Pods
     * advantages
@@ -16,7 +17,7 @@
   * Configmap / secrets
   * Deployments
   * StatefulSets
-5. Kubects Commands
+6. Kubects Commands
   * Create
   * Get
   * Run
@@ -24,7 +25,7 @@
   * Delete
   * Apply
   * Edit
-6. Kubects Other Commands
+7. Kubects Other Commands
   * label
   * scale
   * describe
@@ -34,8 +35,8 @@
   * cp
   * explain
   * set
-7. Imperative vs Declarative
-8. Networking
+8. Imperative vs Declarative
+9. Networking
   * CNM
     * Bridge
     * host
@@ -46,17 +47,27 @@
 
 ## Session 2
 Kubernetes Services and Scheduling
+
 Services and Controllers
+
 Effects of resource limiting on pod scheduling
+
 Configure the Kubernetes scheduler
+
 Run multiple schedulers
+
 Kubernetes Controllers
+
 Persistent Storage in Kubernetes
+
 Securing the Cluster
+
 Logging and Monitoring the Cluster
+
 Troubleshooting the Cluster
 ## Session 3
 Kubernetes Prometheus monitoring
+
 Kubernetes on AWS (EKS) overview
 ## Session 4
 
