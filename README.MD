@@ -2,15 +2,21 @@
 
 ## Session 1
 1. Introduction
-2. Basics
+2. Architecture
+3. Installation
+4. Basics
   * Pods
+    * Pods
+    * advantages
+    * single vs multi container pod
+    * Init Container
   * Controllers
   * Services
   * Volumes
   * Configmap / secrets
   * Deployments
   * StatefulSets
-3. Kubects Commands
+5. Kubects Commands
   * Create
   * Get
   * Run
@@ -18,7 +24,7 @@
   * Delete
   * Apply
   * Edit
-4. Kubects Other Commands
+6. Kubects Other Commands
   * label
   * scale
   * describe
@@ -28,11 +34,8 @@
   * cp
   * explain
   * set
-5. Pods
-  * advantages
-  * single vs multi container pod
-  * Init Container
-6. Networking
+7. Imperative vs Declarative
+8. Networking
   * CNM
     * Bridge
     * host
