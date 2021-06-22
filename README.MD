@@ -1,82 +1,103 @@
 # Course structure
 
 ## Session 1
-1. Introduction
-2. Architecture
+
+* Introduction
+* Architecture
 ![K8s Architecture](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
 ![K8s Architecture](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/07/1-7.png)
-4. Installation
-5. Basics
-  * Pods
-    * Pods
-    * advantages
-    * single vs multi container pod
-    * Init Container
-  * Controllers
-  * Services
+* Installation
+* Basics
+* Kubects Commands
+* Imperative vs Declarative
+
+## Session 2: Services and Scheduling
+
+* replicaSets
+* Deployments
+* StatefulSets
+* Services
+* Manual Scheduling
+* Labels and Selectors
+* Taints and Tolerations
+* Node Selectors
+* Node Affinity
+* Taints and Tolerations vs Node Affinity
+* Resource Requirements and Limits
+* DaemonSets
+* Multiple Schedulers
+* Configuring Kubernetes Scheduler
+
+## Session 3 : Application Lifecycle Management and Storage
+
+* ALM
+  * Rolling Updates and Rollbacks
+  * Configure Environment Variables in Applications
+  * Configuring ConfigMaps in Applications
+  * Configure Secrets in Applications
+  * Multi Container PODs
+* Storage
   * Volumes
-  * Configmap / secrets
-  * Deployments
-  * StatefulSets
-6. Kubects Commands
-  * Create
-  * Get
-  * Run
-  * Expose
-  * Delete
-  * Apply
-  * Edit
-7. Kubects Other Commands
-  * label
-  * scale
-  * describe
-  * exec
-  * logs
-  * cluster-info
-  * cp
-  * explain
-  * set
-8. Imperative vs Declarative
-9. Networking
-  * CNM
-    * Bridge
-    * host
-    * overlay
+  * PV
+  * PVC
+
+## Session 4 : networking
+
+* Basics
+  * Switching Routing
+  * DNS
+  * Network Namespaces
+  * Docker Networking - CNM
   * CNI
-    * calico
-  * CIDR
+  * Cluster Networking
+* Pod Networking
+* CNI in kubernetes
+* CNI weave
+* IP Address Management - Weave
+* Service Networking
+* DNS in kubernetes
+* CoreDNS in Kubernetes
+* Ingress
 
-## Session 2
-Kubernetes Services and Scheduling
+## Session 5 : Security
 
-Services and Controllers
+* Kubernetes Security Primitives
+* Authentication
+  * TLS Introduction
+  * TLS Basics
+  * TLS in Kubernetes
+  * TLS in Kubernetes - Certificate Creation
+* View Certificate Details
+* Certificates API
+* KubeConfig
+* API Groups
+* Role Based Access Controls
+* Cluster Roles and Role Bindings
+* Image Security
+* Security Contexts
+* Network Policy
 
-Effects of resource limiting on pod scheduling
+## Session 6 : Maintenance and Troubleshooting
 
-Configure the Kubernetes scheduler
+* Maintenance
+  * OS Upgrades
+  * Kubernetes Software Versions
+  * Cluster Upgrade Process
+  * Backup and Restore Methods
+* Troubleshooting
+  * Application Failure.
+  * Control Plane Failur
+  * Worker Node Failure.
 
-Run multiple schedulers
+## Session 7 : Logging and Monitoring the Cluster
 
-Kubernetes Controllers
+* Monitor Cluster Components
+* Managing Application Logs.
+* Kubernetes Prometheus monitoring
 
-Persistent Storage in Kubernetes
+## Session 8 : Kubernetes on AWS (EKS) overview
 
-Securing the Cluster
+## backup
 
-Logging and Monitoring the Cluster
-
-Troubleshooting the Cluster
-## Session 3
-Kubernetes Prometheus monitoring
-
-Kubernetes on AWS (EKS) overview
-## Session 4
-
-## Session 5
-
-## Session 6
-
-## Session 7
-
-## Session 8
-
+* Init Container
+* Static Pods
