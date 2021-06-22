@@ -14,8 +14,7 @@ spec:
             - india
             - bangalore
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
-        preference:
+      - preference:
           matchExpressions:
           - key: disktype
             operator: In

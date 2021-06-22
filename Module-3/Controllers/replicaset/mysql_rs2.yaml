@@ -1,35 +1,25 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata: 
-  name: mysqlrs
+  name: nginxrs
   labels:
-    app: mysql
+    app: nginx
 spec: 
   replicas: 3
   selector: 
     matchExpressions:
-      - {key: app, operator: In, values: [mysql_1, mysql_2]}
+      - key: app
+        operator: In
+        values: [nginx_1, nginx_2]
   template:
     metadata:
-      name: mysql
+      name: nginx
       labels:
-        app: mysql_2 
+        app: nginx_2 
     spec:
       containers:
-        - image: mysql:5.6
-          name: mysql
-          env:
-            - name: MYSQL_ROOT_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: mysql-pass
-                  key: password
+        - image: nginx
+          name: nginx
           ports:
-            - containerPort: 3306
-              name: mysql
-          volumeMounts:
-            - name: mysql-persistent-storage
-              mountPath: /var/lib/mysql
-      volumes:
-        - name: mysql-persistent-storage
-          emptyDir: {}
+            - containerPort: 80
+              name: nginx

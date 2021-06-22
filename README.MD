@@ -13,11 +13,14 @@
 
 ## Session 2: Services and Scheduling
 
-* Manual Scheduling
 * Labels and Selectors
-* [Taints and Tolerations](Module - 2/Scheduling/taints-tolerations/toleration-pod.yaml)
-* Node Selectors
-* Node Affinity
+* [Taints and Tolerations](Module-2/Scheduling/taints-tolerations/toleration-pod.yaml)
+  * key : value : effect
+  * NoSchedule
+  * PreferNoSchedule
+  * NoExecute
+* [Node Selectors](Module-2/Scheduling/node-selector.yaml)
+* [Node Affinity](Module-2/Scheduling/nodeaffinity/nginx-nodeaffinity.yaml)
 * Taints and Tolerations vs Node Affinity
 * Resource Requirements and Limits
 * Controllers
@@ -102,3 +105,4 @@
 
 * Init Container
 * Static Pods
+* Manual Scheduling

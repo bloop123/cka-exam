@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: DaemonSet
 metadata:
-  name: nginx-app1
+  name: nginx-daemonset1
   labels:
     app: app1
 spec:
@@ -11,7 +11,7 @@ spec:
       app: app1
   template:
     metadata:
-      name: nginx-app1
+      name: nginx-daemon
       labels:
         app: app1
     spec:

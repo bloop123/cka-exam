@@ -1,14 +1,16 @@
+
+# kubectl taint nodes NODE scanner-app=true:NoSchedule
 apiVersion: v1
 kind: Pod
 metadata:
- name: toleration-pod
+  name: toleration-pod
 spec:
- containers:
- - name: nginx
-   image: nginx
- tolerations:
- - key: "scanner-app"
-   operator: "Equal"
-   value: "true"
-   effect: "NoSchedule"
+  containers:
+  - name: nginx
+    image: nginx
+  tolerations:
+  - key: "scanner-app"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
 
