@@ -14,23 +14,26 @@
 ## Session 2: Services and Scheduling
 
 * Labels and Selectors
+* [Node Selectors](Module-2/Scheduling/node-selector.yaml)
 * [Taints and Tolerations](Module-2/Scheduling/taints-tolerations/toleration-pod.yaml)
+  * 
   * key : value : effect
   * NoSchedule
   * PreferNoSchedule
   * NoExecute
-* [Node Selectors](Module-2/Scheduling/node-selector.yaml)
 * [Node Affinity](Module-2/Scheduling/nodeaffinity/nginx-nodeaffinity.yaml)
 * Taints and Tolerations vs Node Affinity
-* Resource Requirements and Limits
+  * taints allow only tolerant pods to run on nodes, but the pods can run on any other node as well
+  * Affinity allows only scheduling of podes on desired nodes, but other nodes can also be scheduled.
+  * Combination of Taints/Tolerations and NodeAffinity makes nodes and pods mutually exclusive
+* [Resource Requirements and Limits](Module-2/Scheduling/resource-limit/cpu-request-limit.yaml)
 * Controllers
-  * ReplicaSets
-  * Deployments
-  * StatefulSets
-  * DaemonSets
-* Services
+  * [ReplicaSets](Module-3/Controllers/replicaset)
+  * [Deployments](Module-3/Controllers/deployments/app1.yaml)
+  * [DaemonSets](Module-3/Controllers/daemonset/daemonset.yaml)
 * Multiple Schedulers
 * Configuring Kubernetes Scheduler
+* Services
 
 ## Session 3 : Application Lifecycle Management and Storage
 
@@ -106,3 +109,4 @@
 * Init Container
 * Static Pods
 * Manual Scheduling
+* StatefulSets
