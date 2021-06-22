@@ -13,18 +13,19 @@
 
 ## Session 2: Services and Scheduling
 
-* replicaSets
-* Deployments
-* StatefulSets
-* Services
 * Manual Scheduling
 * Labels and Selectors
-* Taints and Tolerations
+* [Taints and Tolerations](Module - 2/Scheduling/taints-tolerations/toleration-pod.yaml)
 * Node Selectors
 * Node Affinity
 * Taints and Tolerations vs Node Affinity
 * Resource Requirements and Limits
-* DaemonSets
+* Controllers
+  * ReplicaSets
+  * Deployments
+  * StatefulSets
+  * DaemonSets
+* Services
 * Multiple Schedulers
 * Configuring Kubernetes Scheduler
 
