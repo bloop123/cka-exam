@@ -8,19 +8,19 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: zone
+          - key: site
             operator: In
             values:
-            - us-central-1
-            - eu-west-1
+            - india
+            - bangalore
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 1
         preference:
           matchExpressions:
-          - key: drbackup
+          - key: disktype
             operator: In
             values:
-            - europe
+            - ssd
   containers:
   - name: nginx
     image: nginx:latest
