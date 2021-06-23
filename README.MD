@@ -57,13 +57,15 @@
   * Docker Networking - CNM
   * CNI
   * Cluster Networking
-![image](https://user-images.githubusercontent.com/17488415/123069727-afed1100-d430-11eb-8c6e-5407b84498e7.png)
+![Cluster Networking](https://user-images.githubusercontent.com/17488415/123069727-afed1100-d430-11eb-8c6e-5407b84498e7.png)
 
 * Pod Networking
 * CNI in kubernetes
 * CNI weave
 * IP Address Management - Weave
 * Service Networking
+* ![Service Networking](https://user-images.githubusercontent.com/17488415/123072311-0e1af380-d433-11eb-8176-15265cf68027.png)
+
 * DNS in kubernetes
 * CoreDNS in Kubernetes
 * Ingress
