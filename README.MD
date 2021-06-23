@@ -13,6 +13,9 @@
 
 ## Session 2: Services and Scheduling
 
+* Kubectl commands
+  * exec
+  * logs
 * Labels and Selectors
 * [Node Selectors](Module-2/Scheduling/node-selector.yaml)
 * [Taints and Tolerations](Module-2/Scheduling/taints-tolerations/toleration-pod.yaml)
@@ -31,22 +34,19 @@
   * [ReplicaSets](Module-3/Controllers/replicaset)
   * [Deployments](Module-3/Controllers/deployments/app1.yaml)
   * [DaemonSets](Module-3/Controllers/daemonset/daemonset.yaml)
-* Multiple Schedulers
-* Configuring Kubernetes Scheduler
-* Services
+* [Services](Module-2/Services/README.md)
 
 ## Session 3 : Application Lifecycle Management and Storage
 
 * ALM
-  * Rolling Updates and Rollbacks
-  * Configure Environment Variables in Applications
-  * Configuring ConfigMaps in Applications
-  * Configure Secrets in Applications
+  * [Rolling Updates and Rollbacks](Module-3/Controllers/deployments/rollout_rollbacks.cmd)
+  * [Environment Variables](Module-4/env_vars.md)
+  * [ConfigMaps and Secrets](Module-4/cm-secret/README.md)
   * Multi Container PODs
 * Storage
-  * Volumes
-  * PV
-  * PVC
+  * [Volumes](Module-4/storage/hoststorage.yaml)
+  * [PV](Module-4/storage/pv.yaml)
+  * [PVC](Module-4/storage/pvc.yaml)
 
 ## Session 4 : networking
 
@@ -93,8 +93,10 @@
   * Backup and Restore Methods
 * Troubleshooting
   * Application Failure.
-  * Control Plane Failur
+  * Control Plane Failure
   * Worker Node Failure.
+* Multiple Schedulers
+* Configuring Kubernetes Scheduler
 
 ## Session 7 : Logging and Monitoring the Cluster
 

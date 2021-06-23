@@ -1,0 +1,22 @@
+apiVersion: vl
+kind: Pod
+metatada:
+  name: random-number—generator
+spec:
+  containers :
+  — image: alpine
+    name: alpine
+    cormand: /bin/sh", "-c"]
+    args: ["shuf -i 0-100 -n 1 >> /opt/number.out;"]
+  volumes :
+  — name: data—volume
+    hostpath:
+      path: /data
+      type: Directory
+
+# awsElasticBlockStorage
+    # volumeID: <someID>
+    # fsType: ext4
+# nfs:
+#   path: /tmp
+#   server: 172.17.0.2
