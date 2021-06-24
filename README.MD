@@ -67,7 +67,7 @@
 
 * DNS in kubernetes
 * CoreDNS in Kubernetes
-* Ingress
+* [Ingress](Ingress/ingress.md)
 
 ## Session 5 : Security
 
