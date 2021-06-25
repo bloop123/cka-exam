@@ -94,7 +94,7 @@
   * Application Failure.
   * Control Plane Failure
   * Worker Node Failure.
-* Multiple Schedulers
+* [Multiple Schedulers](ClusterMaintainance/custom-scheduler.MD)
 * Configuring Kubernetes Scheduler
 
 ## Session 7 : Logging and Monitoring the Cluster
