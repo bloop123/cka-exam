@@ -87,11 +87,11 @@
 
 ## Session 6 : Maintenance and Troubleshooting
 
-* Maintenance(ClusterMaintainance/Upgrade-Kubernetes.MD)
+* [Maintenance](ClusterMaintainance/Upgrade-Kubernetes.MD)
   * OS Upgrades
   * Kubernetes Software Versions
   * Cluster Upgrade Process
-  * Backup and Restore Methods
+  * [Backup and Restore Methods](ClusterMaintainance/BackupRestore.md)
 * Troubleshooting
   * Application Failure.
   * Control Plane Failure
