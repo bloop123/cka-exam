@@ -27,3 +27,6 @@ spec:
 6. Approve the request `kubectl certificate approve amit`
 7. View the certificate `kubectl get csr amit -o yaml`
 8. Decode it `echo "<certificate>" |  base64 --decode`
+
+
+![image](https://user-images.githubusercontent.com/17488415/123402987-f0ca5e80-d5c5-11eb-805b-b5f3c46e4610.png)
