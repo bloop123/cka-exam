@@ -34,6 +34,9 @@ CA:
 Why browser trusts CA
 ![image](https://user-images.githubusercontent.com/17488415/123397940-a09ccd80-d5c0-11eb-9818-c5704ee7049b.png)
 
+![image](https://user-images.githubusercontent.com/17488415/123398685-70096380-d5c1-11eb-8c5e-0ad4894102e6.png)
+
+
 User authenticates itsel;f by create own TLS Transport Layer Security (TLS)
 
 PKI
