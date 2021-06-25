@@ -87,7 +87,7 @@
 
 ## Session 6 : Maintenance and Troubleshooting
 
-* Maintenance
+* Maintenance(ClusterMaintainance/Upgrade-Kubernetes.MD)
   * OS Upgrades
   * Kubernetes Software Versions
   * Cluster Upgrade Process
