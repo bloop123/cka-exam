@@ -78,10 +78,10 @@
 * [KubeConfig](Security/kubeconfig.MD)
 * [API Groups](Security/api-groups.MD)
 * [Role Based Access Controls](Security/RBAC.MD)
-* Cluster Roles and Role Bindings
-* Image Security
-* Security Contexts
-* Network Policy
+* [Cluster Roles and Role Bindings](https://github.com/kodekloudhub/certified-kubernetes-administrator-course/blob/master/docs/07-Security/19-Cluster-Roles.md)
+* [Image Security](https://github.com/kodekloudhub/certified-kubernetes-administrator-course/blob/master/docs/07-Security/21-Image-Security.md)
+* [Security Contexts](https://github.com/kodekloudhub/certified-kubernetes-administrator-course/blob/master/docs/07-Security/23-Security-Context.md)
+* [Network Policy](https://github.com/kodekloudhub/certified-kubernetes-administrator-course/blob/master/docs/07-Security/25-Network-Policies.md)
 
 ## Session 6 : Maintenance and Troubleshooting
 
