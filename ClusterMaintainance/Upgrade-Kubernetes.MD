@@ -33,3 +33,22 @@ Upgrade plan
 
 during update master goes down, but pods keep running and services are available.
 cluster management is not available. pods, if dead, will not be replaced
+
+
+Upgrade for on-premise
+
+Upgrade Master
+1. `kubeadm upgrade plan` shows current version and next upgrade target
+2. upgrade kubeadm `apt upgrade -y kubeadm=1.19.0-00`
+3. Apply upgrade `kubeadm upgrade apply v1.19.0`
+4. upgrade update kubelet `apt upgrade -y kubelet=1.19.0-00` on all nodes. 
+5. service restart kubelet
+
+Upgrade worker Nodes. for each node:
+```
+1. Drain node-1
+2. upgrade kubeadm and ubelet
+3. kubeadm upgrade node config --kubelet-version v1.19.0
+4. service restart kubelet
+5. kubectl uncordon node-1
+```
