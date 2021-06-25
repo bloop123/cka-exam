@@ -69,17 +69,15 @@
 
 ## Session 5 : Security
 
-* Kubernetes Security Primitives
-* Authentication
-  * TLS Introduction
-  * TLS Basics
-  * TLS in Kubernetes
-  * TLS in Kubernetes - Certificate Creation
-* View Certificate Details
-* Certificates API
-* KubeConfig
-* API Groups
-* Role Based Access Controls
+* [Kubernetes Security Primitives](Security/security_primites.md)
+* [Basic Auth](Security/BasicAuth.md)
+* [TLS Authentication Basics](Security/TLS.md)
+* [TLS in Kubernetes](Security/kubernetes-TLS.md)
+* [View Certificate Details](Security/explore_kubernetes_certs.md)
+* [Certificates API](Security/create-and-manage-cert.MD)
+* [KubeConfig](Security/kubeconfig.MD)
+* [API Groups](Security/api-groups.MD)
+* [Role Based Access Controls](Security/RBAC.MD)
 * Cluster Roles and Role Bindings
 * Image Security
 * Security Contexts
