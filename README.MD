@@ -85,6 +85,10 @@
 
 ## Session 6 : Maintenance and Troubleshooting
 
+* Init Container
+* Static Pods
+* Manual Scheduling
+* StatefulSets
 * [Maintenance](ClusterMaintainance/Upgrade-Kubernetes.MD)
   * OS Upgrades
   * Kubernetes Software Versions
@@ -107,7 +111,4 @@
 
 ## backup
 
-* Init Container
-* Static Pods
-* Manual Scheduling
-* StatefulSets
+
