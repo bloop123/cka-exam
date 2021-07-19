@@ -1,0 +1,60 @@
+kind: PersistentVolume
+
+apiVersion: v1
+
+metadata:
+
+ name: nginx-pv-1
+
+ labels:
+
+  type: local
+
+  app: nginx
+
+spec:
+
+ storageClassName: manual
+
+ capacity:
+
+  storage: 1Gi
+
+ accessModes:
+
+ - ReadWriteOnce
+
+ hostPath:
+
+  path: "/home/edureka/data1"
+
+---
+kind: PersistentVolume
+
+apiVersion: v1
+
+metadata:
+
+ name: nginx-pv-2
+
+ labels:
+
+  type: local
+
+  app: nginx
+
+spec:
+
+ storageClassName: manual
+
+ capacity:
+
+  storage: 1Gi
+
+ accessModes:
+
+ - ReadWriteOnce
+
+ hostPath:
+
+  path: "/home/edureka/data2"
