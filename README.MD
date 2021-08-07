@@ -66,7 +66,7 @@
 
 * DNS in kubernetes
 * CoreDNS in Kubernetes
-* [Ingress](Ingress/ingress.md)
+* [Ingress](Ingress/ingress.md) OR https://github.com/amitkumar2283/kubernetes-ingress
 
 ## Session 5 : Security
 
@@ -89,7 +89,6 @@
 * Init Container
 * Static Pods
 * Manual Scheduling
-* StatefulSets
 * [Maintenance](ClusterMaintainance/Upgrade-Kubernetes.MD)
   * OS Upgrades
   * Kubernetes Software Versions
@@ -101,15 +100,19 @@
   * Worker Node Failure.
 * [Multiple Schedulers](ClusterMaintainance/custom-scheduler.MD)
 * Configuring Kubernetes Scheduler
+* [Multui master](Extra-Content/Multi-Master-Setup/README.md)
 
 ## Session 7 : Logging and Monitoring the Cluster
 
-* Monitor Cluster Components
-* Managing Application Logs.
+* [Monitor Cluster Components](Module-6/resource-metrics/README.md)
+* [Horizontal Pod Autoscaler](https://github.com/amitkumar2283/kubernetes-CKA/tree/master/hpa)
 * Kubernetes Prometheus monitoring
 
 ## Session 8 : Kubernetes on AWS (EKS) overview
 
+## Extra
+
 ## backup
+* StatefulSets
 
 
