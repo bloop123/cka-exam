@@ -35,16 +35,16 @@
 * [Services](Module-2/Services/README.md)
 
 ## Session 3 : Application Lifecycle Management and Storage
-
+* Storage
+  * [Volumes](Module-4/storage/hoststorage.yaml)
+  * [PV](Module-4/storage/pv.yaml)
+  * [PVC](Module-4/storage/pvc.yaml)
 * ALM
   * [Rolling Updates and Rollbacks](Module-3/Controllers/deployments/rollout_rollbacks.cmd)
   * [Environment Variables](Module-4/env_vars.md)
   * [ConfigMaps and Secrets](Module-4/cm-secret/README.md)
   * Multi Container PODs
-* Storage
-  * [Volumes](Module-4/storage/hoststorage.yaml)
-  * [PV](Module-4/storage/pv.yaml)
-  * [PVC](Module-4/storage/pvc.yaml)
+
 
 ## Session 4 : networking
 [masterReadme](Networking)
