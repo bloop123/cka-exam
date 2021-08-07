@@ -32,7 +32,6 @@
   * [ReplicaSets](Module-3/Controllers/replicaset)
   * [Deployments](Module-3/Controllers/deployments/app1.yaml)
   * [DaemonSets](Module-3/Controllers/daemonset/daemonset.yaml)
-  * [StatefulSet](Module-3/Controllers/statefulset)
 * [Services](Module-2/Services/README.md)
 
 ## Session 3 : Application Lifecycle Management and Storage
@@ -113,6 +112,6 @@
 ## Extra
 
 ## backup
-* StatefulSets
+  * [StatefulSet](Module-3/Controllers/statefulset)
 
 
