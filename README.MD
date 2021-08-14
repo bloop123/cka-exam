@@ -43,6 +43,7 @@
   * [Rolling Updates and Rollbacks](Module-3/Controllers/deployments/rollout_rollbacks.cmd)
   * [Environment Variables](Module-4/env_vars.md)
   * [ConfigMaps and Secrets](Module-4/cm-secret/README.md)
+  * [Jobs](cka-exam/Jobs)
   * Multi Container PODs
 
 
