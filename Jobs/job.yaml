@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pi
+spec:
+  template:
+    spec:
+#      completions: 5   # Execute pods in sequence
+#      parallelism: 5   # Execute pods in parallel
+#      backoffLimit: 5  # number of times the Kubernetes Job should restart the failing Pod. 
+#      activeDeadlineSeconds: 20  # Setting this parameter to a number will terminate the Job immediately once this number of seconds is reached.
+      containers:
+      - name: pi
+        image: perl
+        command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)"]
+      restartPolicy: Never
+  backoffLimit: 4
