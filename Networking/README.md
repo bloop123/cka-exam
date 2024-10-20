@@ -3,7 +3,7 @@
   * Cluster Networking
 ![Cluster Networking](https://user-images.githubusercontent.com/17488415/123069727-afed1100-d430-11eb-8c6e-5407b84498e7.png)
 * Pod Networking
-  *  IP Addesses are uniquely shared among Nodes.
+  *  IP Addesses are uniquely shared among Nodes. 
   *  Each Pod on a Node gets an IP address assigned.
 * CNI in kubernetes
 * CNI Rules
