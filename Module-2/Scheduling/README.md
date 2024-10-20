@@ -7,7 +7,7 @@
 * Service switch for the same pod 
 * Co-locate pod as per affinity to another pod, ex - a backend pod might need tight interaction with a messaging Queue 
 
-> In the above scenarios, we cannot rely on kube-scheduler directly. A quick look into kube-scheduler shows - 
+> In the above scenarios, we cannot rely on kube-scheduler directly. A quick look into kube-scheduler shows -  
 
 ~~~
 func (f *ConfigFactory) getNextPod() *v1.Pod {
