@@ -2,7 +2,7 @@
 
 A GCP account can be created in the below four steps - 
 
-* Step 1 - Create a GMAIL account
+* Step 1 - Create a GMAIL account 
 * Step 2 - Use GMAIL account to log into GCP console 
 * Step 3 - Add credit card details to enable billing 
 * Step 4 - Create a project 
