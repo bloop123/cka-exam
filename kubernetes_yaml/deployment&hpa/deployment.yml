@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: mydeployment
+ labels:
+  app: abc
+spec:
+ replicas: 2
+ selector:
+  matchLabels:
+   app: abc
+ template:
+  metadata:
+   labels:
+    app: abc
+  spec:
+   containers:
+   - name: ajay
+     image: nginx
+     ports:
+     - containerPort: 80
+     resources:
+      requests:
+       memory: "256Mi"
+       cpu: "500m" # 500 millicores (0.5 CPU)
+      limits:
+       memory: "512Mi"
+       cpu: "1"    # 1 CPU core

@@ -1,0 +1,37 @@
+ swapoff -a
+    2  sed -i '/ swap / s/^/#/' /etc/fstab
+    3  setenforce 0
+    4  sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+    5  dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+    6  dnf install docker-ce --nobest -y
+    7  systemctl start docker
+    8  systemctl enable docker
+    9  cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://pkgs.k8s.io/core:/stable:/v1.31/rpm/
+enabled=1
+gpgcheck=1
+gpgkey=https://pkgs.k8s.io/core:/stable:/v1.31/rpm/repodata/repomd.xml.key
+EOF
+
+   10  dnf install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+   11  systemctl enable kubelet
+   12  systemctl start kubelet
+   13  dnf install -y yum-utils
+   14  dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   15  dnf install -y containerd.io
+   16  mkdir -p /etc/containerd
+   17  containerd config default | sudo tee /etc/containerd/config.toml
+   18  systemctl start containerd
+   19  systemctl enable containerd
+kubeadm join 10.128.0.41:6443 --token k2mwxi.2pk0k2y5o1shf2hm         --discovery-token-ca-cert-hash sha256:9014824bb2fdd2d41c6f0fe0faeb1e1aef61e1cf2d6c58601bcd82f2693cd4b4
+   21  sudo dnf install -y socat iproute-tc
+   22  sudo systemctl stop containerd
+   23  sudo rm -rf /var/run/containerd
+   24  sudo systemctl start containerd
+   25  sudo mkdir -p /etc/containerd
+   26  containerd config default | sudo tee /etc/containerd/config.toml
+   27  sudo systemctl restart containerd
+   28  sudo systemctl start kubelet
+   29  sudo systemctl enable kubelet

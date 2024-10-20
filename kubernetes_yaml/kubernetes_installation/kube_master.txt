@@ -1,0 +1,63 @@
+sudo swapoff -a
+    2  sudo sed -i '/ swap / s/^/#/' /etc/fstab
+    3  sudo setenforce 0
+    4  sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+    5  sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+    6  sudo dnf install docker-ce --nobest -y
+    7  sudo systemctl start docker
+    8  sudo systemctl enable docker
+    9  cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://pkgs.k8s.io/core:/stable:/v1.31/rpm/
+enabled=1
+gpgcheck=1
+gpgkey=https://pkgs.k8s.io/core:/stable:/v1.31/rpm/repodata/repomd.xml.key
+EOF
+
+   10  dnf install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+   11  systemctl enable kubelet
+   12  systemctl start kubelet
+   13  dnf install -y yum-utils
+   14  dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   15  dnf install -y containerd
+   16  mkdir -p /etc/containerd
+   17  containerd config default | sudo tee /etc/containerd/config.toml
+   18  systemctl start containerd
+   19  systemctl enable containerd
+   20  ls /var/run/containerd/containerd.sock
+sysctl -w net.ipv4.ip_forward=1
+   22  vi /etc/sysctl.conf 
+   23  sysctl -p
+   24  firewall-cmd --zone=public --add-port=6443/tcp --permanent
+   25  firewall-cmd --zone=public --add-port=10250/tcp --permanent
+   26  firewall-cmd --reload
+   27  dnf install -y socat iproute
+   28  kubeadm init --pod-network-cidr=192.168.0.0/16
+   29  hostname -i
+   30  kubeadm init --apiserver-advertise-address=10.128.0.41 --pod-network-cidr=192.168.0.0/16
+   31  systemctl stop firewalld
+   32  kubeadm init --apiserver-advertise-address=10.128.0.41 --pod-network-cidr=192.168.0.0/16
+   33  sudo systemctl start containerd
+   34  kubeadm init --apiserver-advertise-address=10.128.0.41 --pod-network-cidr=192.168.0.0/16
+   35  ls -l /var/run/containerd/containerd.sock
+   36  sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --v=5
+   37  sudo setenforce 0
+   38  sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --v=5
+   39  sudo systemctl start docker
+   40  sudo systemctl enable docker
+   41  systectl status docker
+   42  systemctl status docker
+   43  !
+   44  sudo dnf remove -y containerd
+   45  sudo dnf install -y containerd
+   46  sudo mkdir -p /etc/containerd
+   47  containerd config default | sudo tee /etc/containerd/config.toml
+   48  sudo systemctl restart containerd
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --v=5
+   50  mkdir -p $HOME/.kube
+   51    sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   52    sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   53  history
+   54  kubectl get nodes
+   55  kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml

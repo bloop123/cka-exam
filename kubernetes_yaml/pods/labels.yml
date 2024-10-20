@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: amit
+ labels:
+  app: abc
+spec:
+ containers:
+ - name: test
+   image: nginx

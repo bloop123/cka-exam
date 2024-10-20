@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: sidecar
+spec:
+ containers:
+ - name: web
+   image: nginx
+   volumeMounts:
+   - name: logs
+     mountPath: /var/log/nginx
+ - name: logging
+   image: fluentd
+   volumeMounts:
+   - name: logs
+     mountPath: /fluent/log
+
+
+
+metrics
+tracing
+logging
+visualization
+
+loki
