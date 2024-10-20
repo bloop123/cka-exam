@@ -10,7 +10,7 @@ Below are some examples of multicontainer pod design patterns
 
 > In this pattern, you deploy your primary APP container and one or more non-app containers. These non-app containers doesnt provide any significant enhancement to your primary application. These additional containers can be logging agents(logstash), monitoring agent (appdymanics) or any custom watcher or network sniffer containers. Since these containers share the same volumes, the non-app container can fetch data written by your app container and can be used to send these data to backend storages (persistent volumes, elastic search, stackdriver, datadog, etc ) 
 
-##  Adapter pattern 
+##  Adapter pattern  
 
 > This patters is used when you want to transform the output or data of your primary app containers before the data is actually utilized by your backend services. Adapter containers are used along with multiple web-services like nginx, apache which outputs the logs in a standard format. The adapter container can take the raw data from the web-server logs and perform selective data transfomation on top of these logs to create a standardize output file like csv or json when can then be used by your backend systems. 
 
