@@ -117,14 +117,14 @@
 
 ## Interview questions
 
-Cluster Architecture (46 questions)
-Containers (62 questions)
-Jobs (16 questions)
-Networking (60 questions)
-Nodes (59 questions)
-Security (193 questions)
-Storage (89 questions)
-Topology (20 questions)
-Workloads (125 questions)
+1. [Cluster Architecture](./docs/cluster-architecture.md) (46 questions)
+1. [Containers](./docs/containers.md) (62 questions)
+1. [Jobs](./docs/jobs.md) (16 questions)
+1. [Networking](./docs/networking.md) (60 questions)
+1. [Nodes](./docs/nodes.md) (59 questions)
+1. [Security](./docs/security.md) (193 questions)
+1. [Storage](./docs/storage.md) (89 questions)
+1. [Topology](./docs/topology.md) (20 questions)
+1. [Workloads](./docs/workloads.md) (125 questions)
 
 
