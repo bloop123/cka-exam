@@ -13,7 +13,7 @@ Kubernetes DOES NOT support user management. only service accounts
 #User management
 
 Kube-API-server
-
+  
 ![image](https://user-images.githubusercontent.com/17488415/123392974-477e6b00-d5bb-11eb-9bbb-3098fa3e966f.png)
 
 Auth mechanisms
