@@ -4,3 +4,4 @@ clientConnection:
   kubeconfig: "/var/lib/kubernetes/kube-scheduler.kubeconfig"
 leaderElection:
   leaderElect: true
+  
