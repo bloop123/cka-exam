@@ -1,4 +1,4 @@
-# Best practice: 
+# Best practice:  
 Create resources declaratively and backup the yaml files in git
 
 ## Backup Method 1
